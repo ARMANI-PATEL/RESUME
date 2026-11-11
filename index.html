@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Personal resume website of Armani Patel — Finance & Economics undergraduate at PDEU and BBA DBE student at IIM Bangalore."
+  />
+  <title>Armani Patel — Personal Resume</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans (geometric sans) + Cormorant Garamond (editorial italic accent) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="page-wrapper">
+
+    <!-- Bentolio-Inspired Rounded Navigation Bar -->
+    <header id="top-header" class="bento-card">
+      <div class="header-inner">
+        <a href="#hero-bento" class="brand-name">
+          <span class="brand-first">Armani</span>
+          <span class="brand-last">Patel</span>
+        </a>
+        <nav id="navbar" aria-label="Primary Navigation">
+          <ul class="nav-list">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#certifications" class="nav-link">Certifications</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+
+      <!-- Above-the-Fold Bento Grid (Adapted from Figma Bentolio Template) -->
+      <section id="hero-bento" aria-label="Profile Overview">
+
+        <!-- 1. Hero Headline / Intro Card (Top Left) -->
+        <article id="hero" class="bento-card">
+          <img
+            src="assets/flower-icon.svg"
+            alt=""
+            width="119"
+            height="119"
+            class="hero-flower-icon"
+            aria-hidden="true"
+          />
+          <p class="hero-eyebrow">Ahmedabad, Gujarat &middot; Consulting &amp; Finance</p>
+          <div class="hero-copy">
+            <h1 class="hero-title">
+              Finance &amp; Economics
+              <span class="italic-accent">Undergraduate</span>
+              Shaping Strategy &amp;
+              <span class="italic-accent">Digital Business</span>
+            </h1>
+            <p class="hero-subtitle">
+              Armani Patel &mdash; Dual-degree student at PDEU &amp; IIM Bangalore
+            </p>
+          </div>
+          <div class="hero-actions">
+            <a href="#education" class="btn btn-primary">Explore Resume</a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+          </div>
+        </article>
+
+        <!-- 2. Center Focal Portrait Card -->
+        <aside id="portrait-card" class="bento-card" aria-label="Portrait of Armani Patel">
+          <figure class="portrait-frame">
+            <img
+              src="assets/image 1.jpg"
+              alt="Portrait of Armani Patel"
+              width="906"
+              height="1024"
+              class="portrait-img"
+            />
+          </figure>
+        </aside>
+
+        <!-- 3. Right Tall Highlights Card (Bentolio Work Column) -->
+        <aside id="highlights-card" class="bento-card" aria-label="Key Highlights">
+          <div class="highlight-featured">
+            <div class="highlight-top-row">
+              <h2 class="highlight-title">India Recycles</h2>
+              <a href="#experience" class="icon-link" aria-label="Jump to Professional Experience">
+                <img src="assets/arrow-sm.svg" alt="" width="26" height="26" aria-hidden="true" />
+              </a>
+            </div>
+            <div class="highlight-summary-box">
+              <p class="highlight-role">NGO Operations &amp; Outreach Intern</p>
+              <p class="highlight-date">Dec 2024 &ndash; Jan 2025</p>
+              <p class="highlight-desc">
+                Supported recycling initiatives, resource allocation, inventory management, and data-driven community engagement with cross-functional teams.
+              </p>
+            </div>
+          </div>
+
+          <ul class="highlight-links">
+            <li class="highlight-row">
+              <a href="#exp-amun">
+                <span class="row-main">
+                  <strong>Ahmedabad Model United Nations</strong>
+                  <small>Logistics Head &middot; Operations &amp; Coordination</small>
+                </span>
+                <span class="row-tag">Leadership</span>
+              </a>
+            </li>
+            <li class="highlight-row">
+              <a href="#exp-chhatra">
+                <span class="row-main">
+                  <strong>Chhatra Sansad</strong>
+                  <small>Organising Committee &middot; Program Execution</small>
+                </span>
+                <span class="row-tag">Committee</span>
+              </a>
+            </li>
+            <li class="highlight-row">
+              <a href="#education">
+                <span class="row-main">
+                  <strong>PDEU &middot; Finance &amp; Economics</strong>
+                  <small>Bachelor of Arts / Business Administration</small>
+                </span>
+                <span class="row-tag">2024&ndash;2028</span>
+              </a>
+            </li>
+            <li class="highlight-row">
+              <a href="#education">
+                <span class="row-main">
+                  <strong>IIM Bangalore &middot; BBA DBE</strong>
+                  <small>Digital Business &amp; Entrepreneurship</small>
+                </span>
+                <span class="row-tag">2024&ndash;2029</span>
+              </a>
+            </li>
+            <li class="highlight-row">
+              <a href="#certifications">
+                <span class="row-main">
+                  <strong>Executive &amp; Market Credentials</strong>
+                  <small>LSE MG104, Harvard Online (10), NISM</small>
+                </span>
+                <span class="row-tag">12 Modules</span>
+              </a>
+            </li>
+          </ul>
+        </aside>
+
+        <!-- 4. About Me Card (Bottom Left) -->
+        <article id="about" class="bento-card">
+          <img
+            src="assets/circle-icon.svg"
+            alt=""
+            width="38"
+            height="38"
+            class="about-circle-icon"
+            aria-hidden="true"
+          />
+          <div class="about-copy">
+            <h2 class="eyebrow-heading">About Me</h2>
+            <p>
+              I am a Finance and Economics undergraduate at PDEU concurrently pursuing an online BBA in Digital Business &amp; Entrepreneurship from IIM Bangalore. My background combines rigorous academic training with strategic insights from LSE Summer School and certified skills in project management and negotiation from Harvard Online. Having gained hands-on operational experience through a summer internship at India Recycles, I am eager to apply my financial analysis, strategic thinking, and leadership capabilities to high-impact roles in consulting and management.
+            </p>
+          </div>
+        </article>
+
+        <!-- 5. Contact Callout Accent Card (Bottom Middle) -->
+        <a id="contact-cta" href="#contact" class="bento-card bento-accent">
+          <div class="cta-top">
+            <p class="cta-prompt">Have some<br />questions?</p>
+            <img
+              src="assets/arrow-lg.svg"
+              alt=""
+              width="38"
+              height="38"
+              class="cta-arrow-icon"
+              aria-hidden="true"
+            />
+          </div>
+          <p class="cta-heading">Contact me</p>
+        </a>
+
+        <!-- 6. Social & Quick Links Bar (Bottom Right) -->
+        <aside id="socials-bar" class="bento-card" aria-label="Quick Profile Links">
+          <ul class="socials-list">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/armani-patel-698284353/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="mailto:armanipatel1876@gmail.com">Email</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+          </ul>
+        </aside>
+
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" class="resume-section">
+        <div class="section-header">
+          <p class="section-kicker">01 &middot; Academic Foundation</p>
+          <h2 class="section-title">Education</h2>
+        </div>
+
+        <div class="bento-grid-2">
+          <article class="bento-card edu-card">
+            <header class="card-header">
+              <div>
+                <h3 class="card-title">Pandit Deendayal Energy University (PDEU)</h3>
+                <p class="card-subtitle">Bachelor of Arts / Bachelor of Business Administration &mdash; Gandhinagar, Gujarat</p>
+              </div>
+              <span class="card-meta"><time datetime="2024">2024</time> &ndash; <time datetime="2028">2028</time> (Expected)</span>
+            </header>
+            <p class="card-description"><strong>Major:</strong> Finance &nbsp;|&nbsp; <strong>Minor:</strong> Economics</p>
+          </article>
+
+          <article class="bento-card edu-card">
+            <header class="card-header">
+              <div>
+                <h3 class="card-title">Indian Institute of Management Bangalore (IIMB)</h3>
+                <p class="card-subtitle">Bachelor of Business Administration in Digital Business &amp; Entrepreneurship (BBA DBE)</p>
+              </div>
+              <span class="card-meta"><time datetime="2024">2024</time> &ndash; <time datetime="2029">2029</time> (Expected)</span>
+            </header>
+            <p class="card-description">Concurrent online undergraduate program focused on digital strategy and entrepreneurship.</p>
+          </article>
+
+          <article class="bento-card edu-card">
+            <header class="card-header">
+              <div>
+                <h3 class="card-title">London School of Economics and Political Science (LSE)</h3>
+                <p class="card-subtitle">Summer School &ndash; Strategic Management &mdash; London, UK</p>
+              </div>
+              <span class="card-meta"><time datetime="2025-08">August 2025</time></span>
+            </header>
+          </article>
+
+          <div class="bento-card edu-school-group">
+            <div class="school-row">
+              <div>
+                <h3 class="card-title">Zebar School for Children</h3>
+                <p class="card-subtitle">Class XII (CBSE / HSC)</p>
+              </div>
+              <span class="card-meta"><time datetime="2024">2024</time></span>
+            </div>
+            <div class="school-row">
+              <div>
+                <h3 class="card-title">Sattva Vikas School</h3>
+                <p class="card-subtitle">Class X (CBSE)</p>
+              </div>
+              <span class="card-meta"><time datetime="2022">2022</time></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience & Leadership Section -->
+      <section id="experience" class="resume-section">
+        <div class="section-header">
+          <p class="section-kicker">02 &middot; Practical Impact &amp; Leadership</p>
+          <h2 class="section-title">Experience &amp; Leadership</h2>
+        </div>
+
+        <div class="bento-grid-2">
+          <article class="bento-card bento-span-2 experience-card">
+            <header class="card-header">
+              <div>
+                <h3 class="card-title">Intern &mdash; India Recycles (NGO)</h3>
+                <p class="card-subtitle">Operations, Logistics &amp; Community Outreach</p>
+              </div>
+              <span class="card-meta"><time datetime="2024-12">December 2024</time> &ndash; <time datetime="2025-01">January 2025</time></span>
+            </header>
+            <ul class="bullet-list">
+              <li>Assisted in operational logistics, community outreach, and resource allocation to support recycling initiatives and waste-reduction campaigns.</li>
+              <li>Collaborated with cross-functional team members to manage inventory, analyze operational data, and improve local community engagement strategies.</li>
+            </ul>
+          </article>
+
+          <article id="exp-amun" class="bento-card experience-card">
+            <header class="card-header">
+              <div>
+                <h3 class="card-title">Logistics Head &mdash; Ahmedabad Model United Nations</h3>
+                <p class="card-subtitle">Event Operations, Resource Planning &amp; Coordination</p>
+              </div>
+            </header>
+            <ul class="bullet-list">
+              <li>Directed end-to-end conference logistics, venue readiness, and resource allocation across committees to ensure smooth day-to-day execution.</li>
+              <li>Coordinated with organizing teams, external vendors, and hospitality partners to manage schedules, materials, and on-ground workflows.</li>
+            </ul>
+          </article>
+
+          <article id="exp-chhatra" class="bento-card experience-card">
+            <header class="card-header">
+              <div>
+                <h3 class="card-title">Organising Committee &mdash; Chhatra Sansad</h3>
+                <p class="card-subtitle">Program Planning, Delegate Operations &amp; Execution</p>
+              </div>
+            </header>
+            <ul class="bullet-list">
+              <li>Collaborated with the core organising committee to structure event schedules, oversee delegate coordination, and support session operations.</li>
+              <li>Managed cross-team communication, speaker readiness, and on-site execution to deliver a cohesive student leadership forum.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Certifications & Continuing Education Section -->
+      <section id="certifications" class="resume-section">
+        <div class="section-header">
+          <p class="section-kicker">03 &middot; Credentials &amp; Executive Learning</p>
+          <h2 class="section-title">Certifications &amp; Continuing Education</h2>
+        </div>
+
+        <div class="bento-grid-2">
+          <article class="bento-card">
+            <header class="card-header">
+              <div>
+                <h3 class="card-title">Strategic Management MG104</h3>
+                <p class="card-subtitle">London School of Economics and Political Science (LSE Summer School)</p>
+              </div>
+              <span class="card-meta"><time datetime="2025-08">Aug 2025</time></span>
+            </header>
+          </article>
+
+          <article class="bento-card">
+            <header class="card-header">
+              <div>
+                <h3 class="card-title">Application of Data Science in Securities Market</h3>
+                <p class="card-subtitle">National Institute of Securities Market</p>
+              </div>
+            </header>
+          </article>
+
+          <article class="bento-card bento-span-2">
+            <header class="card-header">
+              <div>
+                <h3 class="card-title">Harvard Business School &mdash; Continuing Education Certificates</h3>
+                <p class="card-subtitle">Management, Finance, Strategy &amp; Leadership Modules (10 Completed)</p>
+              </div>
+            </header>
+            <ul class="cert-columns">
+              <li>Project Management</li>
+              <li>Negotiation</li>
+              <li>Budgeting</li>
+              <li>Crisis Management</li>
+              <li>Team Management</li>
+              <li>Strategy, Planning and Execution</li>
+              <li>Leading with Generative AI</li>
+              <li>Strategic Thinking</li>
+              <li>Finance Essentials</li>
+              <li>Goal Setting</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills & Interests Section -->
+      <section id="skills" class="resume-section">
+        <div class="section-header">
+          <p class="section-kicker">04 &middot; Capabilities</p>
+          <h2 class="section-title">Skills &amp; Interests</h2>
+        </div>
+
+        <div class="bento-grid-2">
+          <article class="bento-card">
+            <h3 class="card-title">Core Competencies</h3>
+            <ul class="tag-list">
+              <li class="tag">Financial Analysis</li>
+              <li class="tag">Strategic Planning</li>
+              <li class="tag">Project Management</li>
+              <li class="tag">Negotiation</li>
+              <li class="tag">Micro/Macroeconomics</li>
+            </ul>
+          </article>
+
+          <article class="bento-card">
+            <h3 class="card-title">Technical Skills</h3>
+            <ul class="tag-list">
+              <li class="tag">MS Excel</li>
+              <li class="tag">Financial Modeling Basics</li>
+              <li class="tag">Data Analysis</li>
+              <li class="tag">Front-End Web Development (HTML/CSS)</li>
+              <li class="tag">Git &amp; GitHub</li>
+            </ul>
+          </article>
+
+          <article class="bento-card">
+            <h3 class="card-title">Languages</h3>
+            <ul class="tag-list">
+              <li class="tag">English</li>
+              <li class="tag">Hindi</li>
+              <li class="tag">Gujarati</li>
+              <li class="tag">Sanskrit</li>
+            </ul>
+          </article>
+
+          <article class="bento-card">
+            <h3 class="card-title">Interests</h3>
+            <ul class="tag-list">
+              <li class="tag">Corporate Strategy</li>
+              <li class="tag">Investment Analysis</li>
+              <li class="tag">Operations Management</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="resume-section">
+        <div class="section-header">
+          <p class="section-kicker">05 &middot; Connect</p>
+          <h2 class="section-title">Contact</h2>
+        </div>
+
+        <div class="bento-card bento-accent contact-card">
+          <div class="contact-intro">
+            <h3 class="contact-headline">Let&rsquo;s connect for consulting, finance &amp; management roles.</h3>
+            <p class="contact-note">Based in Ahmedabad, Gujarat &middot; Open to internships and entry-level opportunities.</p>
+          </div>
+          <address class="contact-address">
+            <ul class="contact-list">
+              <li>
+                <span class="contact-label">Email</span>
+                <a href="mailto:armanipatel1876@gmail.com">armanipatel1876@gmail.com</a>
+              </li>
+              <li>
+                <span class="contact-label">Location</span>
+                <span>Ahmedabad, Gujarat</span>
+              </li>
+              <li>
+                <span class="contact-label">LinkedIn</span>
+                <a
+                  href="https://www.linkedin.com/in/armani-patel-698284353/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  linkedin.com/in/armani-patel-698284353
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="site-footer" class="bento-card">
+      <div class="footer-inner">
+        <p>&copy; <time datetime="2026">2026</time> Armani Patel. Built with HTML &amp; CSS.</p>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/armani-patel-698284353/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="mailto:armanipatel1876@gmail.com">Email</a>
+          <a href="#top-header" class="back-to-top">Back to Top &uarr;</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
